@@ -1,7 +1,8 @@
 body{
   background-color: #231D21;
   color: #231D21;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Slab', serif;
+
 }
 
 .container {
@@ -73,12 +74,36 @@ body{
 
 .logo{
     vertical-align: middle;
-    color: black;
     font-size: 40px;
-    color: inherit;
+    color: #E8E5E8;
 
 }
 
 .logo:hover{
   box-shadow: 2px 2px 62px -6px rgba(255,255,255,1);
+}
+@media only screen and (max-width: 500px){
+  .container{
+  grid-template-columns: 350px;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-areas:
+  "header"
+  "main"
+  "sidebar"
+  "sidebar-right"
+}
+.main {
+  padding-bottom: 10px;
+}
+.header {
+  padding-bottom: 10px;
+}
+.picture{
+  display: none;
+}
+.sidebar-right{
+  margin-bottom: 20px;
+}
 }
