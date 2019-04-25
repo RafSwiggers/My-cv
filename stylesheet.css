@@ -9,10 +9,11 @@
   "overline overline overline"
   "header header picture"
   "underline underline underline"
-  "sidebar main sidebar2"
+  "sidebar main sidebar-right"
   "sidebar footer footer";
   font-family: 'Open Sans', sans-serif;
 }
+
 .main{
   grid-area: main;
   background-color: #EAE5D9;
@@ -35,8 +36,9 @@
   box-shadow: 2px 9px 13px 0px rgba(0,0,0,0.75);
   padding-left: 10px;
 }
-.sidebar2{
-  grid-area: sidebar2;
+
+.sidebar-right{
+  grid-area: sidebar-right;
   background-color: #EAE5D9;
   padding-left: 10px;
 }
@@ -51,25 +53,30 @@
   vertical-align: top;
 
 }
+
 #profilepic{
   height: 100%;
   width: 100%;
 }
+
 .overline{
   grid-area: overline;
   background-color: #F8F8F8;
-  box-shadow: inset 2px 9px 13px -8px rgba(0,0,0,0.75);
 }
+
 .underline{
   grid-area: underline;
   background-color: #F8F8F8;
   box-shadow: inset 2px 9px 13px -8px rgba(0,0,0,0.75);
 }
+
 .picture{
   grid-area: picture;
   box-shadow: 2px 9px 13px 0px rgba(0,0,0,0.75);
 }
+
 #logo{
     vertical-align: middle;
     color: black;
+    font-size: 40px;
 }
