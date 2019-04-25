@@ -1,6 +1,7 @@
 body{
   background-color: #231D21;
   color: #231D21;
+  font-family: 'Oswald', sans-serif;
 }
 
 .container {
@@ -16,7 +17,6 @@ body{
   "header header picture"
   "sidebar main sidebar-right"
   "sidebar . sidebar-right";
-  font-family: 'Open Sans', sans-serif;
 }
 
 .main{
