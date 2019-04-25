@@ -1,5 +1,6 @@
 body{
-  background-color: #747374;
+  background-color: #231D21;
+  color: #231D21;
 }
 
 .container {
@@ -10,17 +11,17 @@ body{
   grid-template-columns: 30% 45% 25%;
   grid-template-rows: 30% 50% 20%;
   grid-row-gap: 10px;
-  grid-column-gap: 10px; 
+  grid-column-gap: 10px;
   grid-template-areas:
   "header header picture"
   "sidebar main sidebar-right"
-  "sidebar main sidebar-right";
+  "sidebar . sidebar-right";
   font-family: 'Open Sans', sans-serif;
 }
 
 .main{
   grid-area: main;
-  background-color: #EAE5D9;
+  background-color: #E8E5E8;
   padding-left: 10px;
   font-size: 12px;
   line-height: 10px;
@@ -29,7 +30,7 @@ body{
 
 .sidebar{
   grid-area: sidebar;
-  background-color: #2E4039;
+  background-color: #162140;
   padding-left: 10px;
   font-size: 15px;
   color: #eeeeee;
@@ -38,14 +39,14 @@ body{
 
 .header{
   grid-area: header;
-  background-color: #EAE5D9;
+  background-color: #E8E5E8;
   padding-left: 10px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .sidebar-right{
   grid-area: sidebar-right;
-  background-color: #EAE5D9;
+  background-color: #E8E5E8;
   padding-left: 10px;
 }
 
