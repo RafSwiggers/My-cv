@@ -1,6 +1,4 @@
 .container {
-  width: 100px;
-  height: 200px;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: 50px 100px 50px;
