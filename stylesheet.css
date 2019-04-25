@@ -1,9 +1,10 @@
 .container {
+  height: 500px;
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 50px 100px 50px;
+  grid-template-rows: auto;
   grid-template-areas:
-  "header header header"
+  "header header picture"
   "sidebar main sidebar2"
   "sidebar footer footer";
 }
@@ -24,9 +25,13 @@
 .sidebar2{
   grid-area: sidebar2;
   background-color: black
+  color: white;
 }
 
 .footer{
   grid-area: footer;
   background-color: yellow;
+}
+.picture{
+  background-color: black;
 }
