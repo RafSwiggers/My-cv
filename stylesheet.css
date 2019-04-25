@@ -1,40 +1,55 @@
 .container {
+  width: 600px;
+  height: 500px;
   margin: auto;
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 30% 45% 25%;
   grid-template-rows: 2% 28% 2% 50% 18%;
   grid-template-areas:
   "overline overline overline"
-  "picture header header"
+  "header header picture"
   "underline underline underline"
   "sidebar main sidebar2"
   "sidebar footer footer";
+  font-family: 'Open Sans', sans-serif;
 }
 .main{
   grid-area: main;
-  background-color: #EAE5D9
+  background-color: #EAE5D9;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 10px;
 }
 
 .sidebar{
   grid-area: sidebar;
   background-color: #747374;
+  box-shadow: 2px 9px 13px 0px rgba(0,0,0,0.75);
+  padding-left: 10px;
+  font-size: 15px;
 }
 
 .header{
   grid-area: header;
   background-color: #EAE5D9;
   box-shadow: 2px 9px 13px 0px rgba(0,0,0,0.75);
+  padding-left: 10px;
 }
 .sidebar2{
   grid-area: sidebar2;
   background-color: #EAE5D9;
+  padding-left: 10px;
 }
 
 .footer{
   grid-area: footer;
   background-color: #EAE5D9;
-  font-size: 35px;
+  font-size: 25px;
   padding-left: 50px;
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  text-align: center;
+  vertical-align: top;
+
 }
 #profilepic{
   height: 100%;
@@ -53,4 +68,8 @@
 .picture{
   grid-area: picture;
   box-shadow: 2px 9px 13px 0px rgba(0,0,0,0.75);
+}
+#logo{
+    vertical-align: middle;
+    color: black;
 }
