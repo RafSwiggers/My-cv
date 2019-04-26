@@ -17,12 +17,12 @@ body{
   grid-column-gap: 10px;
   grid-template-areas:
   "header header picture"
-  "sidebar main sidebar-right"
-  "sidebar . sidebar-right";
+  "info experience skills"
+  "info . skills";
 }
 
-.main{
-  grid-area: main;
+.experience{
+  grid-area: experience;
   background-color: #E8E5E8;
   padding-left: 10px;
   font-size: 12px;
@@ -30,8 +30,8 @@ body{
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.sidebar{
-  grid-area: sidebar;
+.info{
+  grid-area: info;
   background-color: #162140;
   padding-left: 10px;
   font-size: 15px;
@@ -46,8 +46,8 @@ body{
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.sidebar-right{
-  grid-area: sidebar-right;
+.skills{
+  grid-area: skills;
   background-color: #E8E5E8;
   padding-left: 10px;
 }
@@ -85,17 +85,19 @@ body{
 }
 @media only screen and (max-width: 600px){
   .container{
-  grid-template-columns: 250px;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 75%;
+  grid-template-rows: 20% 45% 25% auto;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   grid-template-areas:
   "header"
-  "main"
-  "sidebar"
-  "sidebar-right"
+  "experience"
+  "skills"
+  "info"
+
 }
 .main {
+  margin: auto;
   padding-bottom: 10px;
 }
 .header {
@@ -108,21 +110,21 @@ body{
   display: none;
 }
 body {
-  font-size: 20px;
+  font-size: 15px;
 }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   .container{
-  grid-template-columns: 500px;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 75%;
+  grid-template-rows: 20% 45% 25% auto;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   grid-template-areas:
   "header"
-  "main"
-  "sidebar-right"
-  "sidebar"
+  "experience"
+  "skills"
+  "info"
 
 }
 .main {
@@ -137,6 +139,6 @@ body {
 .sidebar-right{
 }
 body{
-  font-size: 17px;
+  font-size: 15px;
 }
 }
