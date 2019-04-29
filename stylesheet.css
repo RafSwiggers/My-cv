@@ -1,6 +1,6 @@
 body{
   background-image: url("./background.jpg");
-  color: #231D21;
+  color: #eeeeee;
   font-family: 'Gudea', serif;
   font-size: 12px;
 
@@ -18,12 +18,12 @@ body{
   grid-template-areas:
   "header header picture"
   "info experience skills"
-  "info . skills";
+  "info experience skills";
 }
 
 .experience{
   grid-area: experience;
-  background-color: #E8E5E8;
+  border: 2px solid white;
   padding-left: 10px;
   font-size: 12px;
   line-height: 10px;
@@ -32,23 +32,22 @@ body{
 
 .info{
   grid-area: info;
-  background-color: #162140;
+  border: 2px solid white;
   padding-left: 10px;
   font-size: 15px;
-  color: #eeeeee;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .header{
   grid-area: header;
-  background-color: #E8E5E8;
+  border: 2px solid white;
   padding-left: 10px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .skills{
   grid-area: skills;
-  background-color: #E8E5E8;
+  border: 2px solid white;
   padding-left: 10px;
 }
 
