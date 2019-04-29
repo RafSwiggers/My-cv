@@ -5,5 +5,5 @@ To design and create a CV, in html and CSS. In doing so, become familiar with th
 
 ### [Link to preview](https://rafswiggers.github.io/My-cv/cv.html)
 
-### [Check out my alternate version here (https://rafswiggers.github.io/My-cv/clearcv.html)]
+### [Check out my alternate version here] (https://rafswiggers.github.io/My-cv/clearcv.html)
 
